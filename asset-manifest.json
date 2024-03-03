@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/drugShopTest/static/css/main.0b495fda.css",
-    "main.js": "/drugShopTest/static/js/main.c5b8a2fc.js",
+    "main.css": "/drugShopTest/static/css/main.9c00d12f.css",
+    "main.js": "/drugShopTest/static/js/main.cdd851cb.js",
     "index.html": "/drugShopTest/index.html",
-    "main.0b495fda.css.map": "/drugShopTest/static/css/main.0b495fda.css.map",
-    "main.c5b8a2fc.js.map": "/drugShopTest/static/js/main.c5b8a2fc.js.map"
+    "main.9c00d12f.css.map": "/drugShopTest/static/css/main.9c00d12f.css.map",
+    "main.cdd851cb.js.map": "/drugShopTest/static/js/main.cdd851cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b495fda.css",
-    "static/js/main.c5b8a2fc.js"
+    "static/css/main.9c00d12f.css",
+    "static/js/main.cdd851cb.js"
   ]
 }
