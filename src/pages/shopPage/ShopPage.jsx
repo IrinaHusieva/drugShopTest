@@ -23,17 +23,11 @@ const ShopPage = () => {
     const handleShopClick = (shop) => {
         setCurrentShop(shop); 
     };
-const initialCartState = () => {
-  return {
-    cart: [],
-    message: "Ваша корзина ще пуста"
-  };
-};
+
 
     useEffect(() => {
     const storedCart = localStorage.getItem('cart');
     if (storedCart) {
-     initialCartState()
     }
   }, []);
 

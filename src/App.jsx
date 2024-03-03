@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Header from './header/Header';
-import CartPage from '../pages/cartPage/CartPage';
-import ShopPage from '../pages/shopPage/ShopPage';
-import { CartProvider } from '../cartContext';
+import Header from './components/header/Header';
+import CartPage from './pages/cartPage/CartPage';
+import ShopPage from './pages/shopPage/ShopPage';
+import { CartProvider } from './cartContext';
 
 export const App = () => {
   return (

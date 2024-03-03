@@ -42,7 +42,38 @@ input:focus {
 
 .container {
   display: flex;
-  justify-content: space-between;
   padding: 20px;
   gap: 40px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.counter button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.cardImage {
+  width: 100%;
+  max-width: 300px;
+}
+.cartList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+}
+.cartItem {
+  display: flex;
+  flex-direction: column;
 }
