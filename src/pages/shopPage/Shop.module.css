@@ -12,15 +12,7 @@
 .drugs {
   flex: 2;
 }
-/* 
-.shopList {
-  list-style: none;
-}
-.shopBtn {
-  width: 200px;
-  height: 50px;
-  margin-bottom: 10px;
-} */
+
 .shopList {
   list-style-type: none;
   padding: 0;
