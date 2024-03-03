@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import css from './Shop.module.css';
 import { fetchData } from 'api/api';
+import { useCart } from '../../cartContext';
 
 const ShopPage = () => {
+  const { addToCart } = useCart(); 
+
     const [shops, setShops] = useState([]);
     const [currentShop, setCurrentShop] = useState(null);
 
@@ -20,6 +23,19 @@ const ShopPage = () => {
     const handleShopClick = (shop) => {
         setCurrentShop(shop); 
     };
+const initialCartState = () => {
+  return {
+    cart: [],
+    message: "Ваша корзина ще пуста"
+  };
+};
+
+    useEffect(() => {
+    const storedCart = localStorage.getItem('cart');
+    if (storedCart) {
+     initialCartState()
+    }
+  }, []);
 
     return (
         <div className={css.container}>
@@ -39,7 +55,7 @@ const ShopPage = () => {
                         <li key={i} className={css.drugItem}>
                             <img src={drug.url} alt='drug' className={css.drugImage} />
                             <h3 className={css.title}>{drug.name}</h3>
-                            <button className={css.drugBtn}>add to Cart</button>
+                            <button className={css.drugBtn} onClick={() => addToCart(drug)}>Add to Cart</button>
                         </li>
                     ))}
                 </ul>
