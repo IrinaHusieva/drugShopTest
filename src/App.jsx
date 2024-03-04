@@ -12,9 +12,9 @@ export const App = () => {
         <div>
           <Header />
           <Routes>
-            <Route path="/drugShopTest" element={<Navigate to="/shop" />} />
-            <Route path="/shop" element={<ShopPage />} />
-            <Route path="/cart" element={<CartPage />} />
+            <Route path="/drugShopTest" element={<Navigate to="/drugShopTest/shop" />} />
+<Route path="/drugShopTest/shop" element={<ShopPage />} />
+            <Route path="/drugShopTest/cart" element={<CartPage />} />
           </Routes>
         </div>
       </CartProvider>
